@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tybe Media - Unique Webdesign for unique projects.">
+  <link rel="stylesheet" href="style.css" />
+  <title>Tybe Media</title>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script> -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("topnav");
+      if (x.className === "nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav";
+      }
+    }
+  </script>
+  <!-- <script type="text/javascript">
+    emailjs.init("user_SGnVUcBXkp3FtaIz8RMoo");
+
+    function sendEmail() {
+      const re =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+      let name = document.getElementById("name").value;
+      let mail = document.getElementById("mail").value;
+      let message = document.getElementById("message").value;
+
+      var templateParams = {
+        name: name,
+        mail: mail,
+        message: message
+      };
+      if (re.test(String(mail).toLowerCase()) && message != '') {
+        emailjs.send('service_pwkxoon', 'template_swvdnbn', templateParams)
+          .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document.getElementById("sendMailButton").disabled = true;
+            document.getElementById("sendMailButton").style.background = "#cccccc"
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+      }
+    }
+  </script> -->
+</head>
+
+<body>
+  <!-- Nav -->
+  <div class="nav" id="topnav">
+    <a href="index.html" id="logo"><img src="logo.png" alt="Tybe Media" style="z-index: 3" /></a>
+    <div>
+      <a href="#about" onclick="myFunction()">About</a>
+      <a href="#projects" onclick="myFunction()">Projects</a>
+      <a href="#contact" onclick="myFunction()">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i><svg height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg></i>
+    </a>
+  </div>
+  <!-- Welcome Container -->
+  <div class="welcome-container">
+    <div id="wc-main">
+      <h2>Tybe Media, or in other words</h2>
+      <h1 class="shine-test">Web done right.</h1>
+      <h2>
+        As the importance of online presence increases day by day, we want to accomplish projects that are just as
+        unique as the people we work with.
+        Whether it's a personal website or a complex web-app, together with our Partners we fullfill your creative dream
+        in Time and by modern standards.
+
+      </h2>
+      <div id="wc-button"><span><a href="#projects">See Projects</a></span></div>
+    </div>
+    <img src="CutoutMe.png" />
+  </div>
+  <div class="about-container">
+    <img src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774" />
+    <!-- <img src="codingShot.jpg" /> -->
+    
+    <div id="about">
+          <h1 class="sub-heading" style="margin: 0">About</h1>
+      <h2>
+        I'm Timo Beyer, I develop Websites, Games and general Software.<br />
+        I learned a lot during my Vocational Training as a Fullstack
+        Developer, still I had my biggest realization with the fact that there
+        is no space to express creativity in the way I define the art of
+        software developing. Therefor I founded this company, with the goal of
+        creating unique software for unique people and projects.
+      </h2>
+      <div style="width: 100%">
+        <div class="timeline-view">
+          <span>11.2018 - 06.2021</span>
+          <span>Fullstack Developer Apprenticeship</span>
+        </div>
+        <div class="timeline-view">
+          <span>02.2021</span>
+          <span>First customer Project</span>
+        </div>
+        <div class="timeline-view">
+          <span>01.04.2021</span>
+          <span>Founded Tybe Media</span>
+        </div>
+        <div class="timeline-view">
+          <span>23.06.2021</span>
+          <span>Fulltime Self-Employed</span>
+        </div>
+      </div>
+      <!-- <div class="gauge-view">
+          <span> 5 </span>
+          <span> Projects </span>
+        </div> -->
+    </div>
+  </div>
+  <!-- What we do... -->
+  <div>
+    <h1 style="margin-left: 1em">What we do...</h1>
+    <div class="showcase">
+      <div>
+          <img width="256px" src="ui-design.png">
+          <br><span style="font-weight: bold;"> Webdesign
+        </span><br>
+        <span style="font-size: 16pt;">
+         The website is the first thing a potential customer sees when they hear about your project or company, those first seconds are the deciding factor between growing interest and never hearing about them again.
+        </span>
+      </div>
+      <div>
+          <img width="256px" src="seo.png">
+          <br><span style="font-weight: bold;"> SEO
+        </span><br>
+        <span style="font-size: 16pt">
+          No matter how perfect your website is, if no one can find it, it doesn't matter.
+          That's where Search Engine Optimization comes into play...
+          We'll do everything to modern standards to allow customers to see your website. 
+        </span>
+      </div>
+      <div>  
+        <img width="256px" src="analyze.png">
+        <br><span style="font-weight: bold;"> Analyzing
+      </span><br>
+    <span style="font-size: 16pt">
+      Whether it's about stats for your website like views a day, time spent there, clicks made... 
+      Or about a different topic, we are experts with numbers, optimization is a crucial point for long-term success. 
+    </span>
+    </div>
+    </div>
+  </div>
+  <hr>
+  <!-- ...Why Tybe-Media? -->
+  <div class="why-we-do-container">
+    <h1 style="margin-left: 1em">Why Tybe Media?</h1>
+    <div style="display: flex; justify-content: space-around;">
+      <div>... Because you are just as unique as your Ideas & your Project! <br>
+      Don't waste potential success by appearing average. <br>
+      Nowaday everything is digital as time goes on being visible to others becomes difficult. </div>
+      <img src="project-launch.svg"></img>
+      <div> That's where Tybe Media comes into play; To me Webdesign and branding is a form of art, it's the reason I decided to quit my old job and decided to found this company. <br>
+      Webdesign is my passion.<br>
+      My Goal is to help your Idea grow, lead to success.</div>
+    </div>
+    
+    <!-- <div style="position: relative;">
+      <img src="https://images.unsplash.com/photo-1514564652994-565a3bf3a25b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80">
+      <div style="position: absolute;top: 50%; text-align: center;width: 100%;">
+       <h1>Your uniqueness is your magic</h1>
+        <h2>I want your Project to be just as unique as you are, Webdesign to me is a form of art... <br>
+      I want your Project & Idea to succeed. </h2>
+      </div>
+    </div> -->
+  </div>
+  <hr>
+  <!-- Projects -->
+  <h1 class="sub-heading" id="projects">Projects</h1>
+  <div class="projects-container"  style="margin-bottom: 5em;">
+    <a href="https://www.bautalent.de" target="_blank">
+      <img src="./Koinzer.svg">
+      <h2>Koinzer Altbausanierung</h2>
+      <h3>Webdesign & Google SEO</h3>
+    </a>
+    <a href="http://mietpark24.online" target="_blank" >
+      <img src="./Mietpark24-Logo-wbg.png"/>
+      <h2>Mietpark24</h2>
+      <h3>Webdesign, Backend & Google SEO</h3>
+    </a>
+    <a href="http://finanzdienstleistung.sh" target="_blank" >
+      <img src="./finanzdienstleistungLogo.png"/>
+      <h2>Jan-Ole Stahl finanzdienstleistung</h2>
+      <h3>Webdesign</h3>
+    </a>
+  </div>
+  <hr>
+  <!-- Contact -->
+  <h1 class="sub-heading" id="contact">Let's Work together</h1>
+  <div class="contact-container">
+    <div style="width: 100%">
+      <!-- Contact Methods -->
+      <div class="socials">
+        <a href="https://www.instagram.com/tybemedia/" target="_blank">
+          <img src="instagram-icon.webp" />
+          <span>Instagram</span></a>
+        <a href="https://wa.me/+4915226157169" target="_blank">
+          <img src="whatsapp-icon.png" />
+          <span>Whatsapp</span></a>
+        <a href="tel:+49 1522 6157169"> <img src="phone.png" /><span> Phone</span></a>
+        <a href="mailto:info@tybe-media.com"><img src="mail.png"><span>Mail</span></img></a>
+      </div>
+    </div>
+    <img src="./businessBildCutout.png" style="max-width: 30vw";/>
+  </div>
+  <footer>
+    <div>
+      <span>©2022 Tybe Media by Timo Beyer</span>
+      <span>Contact</span>
+      <span><a href="./impress.html" target="_blank">Impress</a></span>
+    </div>
+  </footer>
+</body>
+
+</html>
