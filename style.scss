@@ -94,7 +94,10 @@ color: rgb(255, 255, 255);
     }
     #wc-main{
         padding: 2em;
-
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
     }
     #wc-button{
         white-space:nowrap;
@@ -102,7 +105,8 @@ color: rgb(255, 255, 255);
         animation: slideInFromLeft 1s 1 forwards;
         animation-delay: 1.5s;
     font-size: 18pt;
-        margin: 2em;
+    text-align: center;
+    margin-top: 1em;
         span{
             padding: 1em; border: solid white 1px;
             border-radius: 15px;
@@ -250,6 +254,7 @@ footer{
 .why-we-do-container{
     text-shadow: black 2px 2px 2px;
     align-items: center;
+    margin: 1em;
     h1{
         font-size: 42pt;
         font-family: 'Shadows Into Light', cursive;
@@ -259,7 +264,6 @@ footer{
     }
     font-size: 20pt;
     div{
-        margin: 1em;
         div,img{
             width: 33.33%;
             max-height: 350px;
@@ -363,10 +367,24 @@ input, textarea{
 }
 .projects-container{
     a{
-        width: calc(100% / 2 - 2em) ;
+        width: calc(100%) ;
+        margin: 0 4em;
     }
 }
-
+#projects{
+    margin: 0;
+    text-align: center;
+}
+.sub-heading{
+    margin: 0;
+    text-align: center;
+}
+#about{
+    text-align: center;
+}
+.why-we-do-container{
+text-align: center;
+}
 }
 
 
