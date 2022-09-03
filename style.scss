@@ -195,7 +195,6 @@ input, textarea{
       flex-direction: row;
       div, img{
           width: 100%;
-          margin: 1em;
       }
       img{
           object-fit: cover;
@@ -210,16 +209,16 @@ input, textarea{
     width: calc(100% - 4em);
     a{
         width: calc(50% - 1em);
+        margin: 0.5em;
     }
     div, a{
         display: flex; align-items: center;
+        justify-content: center;
         font-size: 25pt;
-        padding: 0.25em;
     }
     img{
         height: 64px;
         width: 64px;
-        margin-right: 0.25em;
         object-fit: cover;
     }
     span{
