@@ -363,6 +363,20 @@ footer div {
   .showcase div {
     width: 70%;
   }
+  .showcase #projects {
+    margin-top: 2em;
+  }
+  .why-we-do-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .why-we-do-container img {
+    border-radius: 0;
+  }
+  .why-we-do-container div {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .bright-part {
@@ -374,12 +388,21 @@ footer div {
   img, #wc-main {
     width: 100% !important;
   }
+  #contact {
+    padding: 1em;
+  }
+  .contact-container {
+    align-items: center;
+  }
   .nav a:not(#logo, .icon) {
     display: none;
   }
   .nav a.icon {
     float: right;
     display: block;
+  }
+  .about-container {
+    min-height: auto;
   }
   .nav.responsive {
     animation: slideInFromRight 1s 1;
