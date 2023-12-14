@@ -9,23 +9,14 @@
   <link rel="stylesheet" href="style.css" />
   <title>Tybe Media</title>
   <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script> -->
-  <script>
-    function myFunction() {
-      var x = document.getElementById("topnav");
-      if (x.className === "nav") {
-        x.className += " responsive";
-      } else {
-        x.className = "nav";
-      }
-    }
-  </script>
+
 </head>
 
 <body>
   <!-- Nav -->
   <div class="nav" id="topnav">
-    <a href="index.html" id="logo"><img src="./images/logo.png" alt="Tybe Media" style="z-index: 3" /></a>
-    <div>
+    <a href="index.html" id="logo"><img src="./assets/logo.png" alt="Tybe Media" style="z-index: 3" /></a>
+    <div class="nav-buttons">
       <a href="#about" onclick="myFunction()">About</a>
       <a href="#projects" onclick="myFunction()">Projects</a>
       <a href="#contact" onclick="myFunction()">Contact</a>
@@ -37,138 +28,58 @@
     </a>
   </div>
   <!-- Welcome Container -->
-  <div class="welcome-container">
-    <div id="wc-main">
-      <h2>Tybe Media</h2>
-      <h1 class="shine-test">Web done right.</h1>
-      <h2>
-        As the importance of online presence increases day by day, we bring your projects & Ideas into reality
-      </h2>
-      <div id="wc-button"><span><a href="#projects">See Projects</a></span></div>
-    </div>
-    <img src="./images/start-image.jpg" />
+  <div class="welome-wrapper">
+<img src="./assets/hamburg-birdsview.webp">
   </div>
-  <div class="about-container">
-    <img src="https://images.unsplash.com/photo-1617575521317-d2974f3b56d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" />
-    <!-- <img src="codingShot.jpg" /> -->
-    
-    <div id="about">
-          <h1 class="sub-heading" style="margin: 0;line-height: 1em"> "In order to be irreplacable, one must always be different."</h1>
-      <h2>
-        In a fast-paced world, your idea can be the best one, yet if no one get's to see it, it won't have much of an impact. <br>
-        With prior experience in large corporation software the idea was born to use this knowledge for projects and people that actually have an identity.<br>
-        Projects that are unique. A website should be the visualization of this.
-<br>
-      </h2>
-      <div style="width: 100%">
-        <div class="timeline-view">
-          <span>01.04.2021</span>
-          <span>Founded Tybe Media</span>
-        </div>
-     
-      </div>
-      <!-- <div class="gauge-view">
-          <span> 5 </span>
-          <span> Projects </span>
-        </div> -->
-    </div>
-
-  </div>
-      <!-- Bright Part -->
-      <div class="bright-part">
-    <!-- ...Why Tybe-Media? -->
-    <div class="why-we-do-container">
-    <img src="https://images.unsplash.com/photo-1541873676-a18131494184?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=718&q=80">
-      
-      <div style="display: flex; justify-content: space-around;">
-        <h1 class="sub-heading">Why Tybe Media?</h1>
-        <div>... Because you are just as unique as your Ideas & your Project! <br>
-        Don't waste potential success by appearing average. <br>
-        Nowaday everything is digital as time goes on being visible to others becomes difficult. </div>
-        <img src="./images/rocket.svg" style="margin: 1em"></img>
-        <div> That's where Tybe Media comes into play; Our goal is to build your brand, expand your idea and visualize it for the greatest impact.<br>
-        To help your Idea grow, lead to success.</div>
-      </div>
+  <!-- Portfolio -->
+  <h1 style="text-align: center;">Portfolio</h1>
+  <div class="projects">
+<div>
+  <img src="./assets/project-cb-1516x896.png">
+  <h2>Cheribundi</h2>
 </div>
-
-  <!-- What we do... -->
-  <!-- <div>
-    <h1 class="sub-heading">What we do...</h1>
-    <div class="showcase">
-      <div>
-          <img width="256px" src="./images/score.gif">
-          <br><span style="font-weight: bold;"> Idea
-        </span><br>
-        <span style="font-size: 16pt;">
-         The website is the first thing a potential customer sees when they hear about your project or company, those first seconds are the deciding factor between growing interest and never hearing about them again.
-        </span>
-                 <span style="font-size: 16pt;">
-          Maybe you already have your finished plan and only need polishing.
-        </span>
-      </div>
-      <div>
-          <img width="256px" src="./images/responsive-design(1).gif">
-          <br><span style="font-weight: bold;"> Design
-        </span><br>
-        <span style="font-size: 16pt">
-          Next we will transform your idea into the desired product, no matter whether you want an app or website.
-        </span>
-      </div>
-      
-      <div>  
-        <img width="256px" src="./images/engagement(1).gif">
-        <br><span style="font-weight: bold;"> Scaling
-      </span><br>
-    <span style="font-size: 16pt">
-      Our Journey does'nt end here, our team will help your idea to grow using SEO and other modern technologies  
-    </span> 
-    </div>
-    </div>
-  </div> -->
-
-  <!-- Projects -->
-  <h1 class="sub-heading" id="projects">Most recent Projects</h1>
-  <div class="projects-container"  style="margin-bottom: 5em;">
-    <a href="https://cheribundi.de" target="_blank">
-      <img src="./images/Cheribundi.jpg">
-      <h2>Cheribundi Europe</h2>
-      <h3>Shopify & SEO</h3> <br>
-    </a>
-    <a href="http://rent-a-fishman.tybe-media.de/" target="_blank">
-      <img src="./images/rent-a-fishman-logo.png">
-      <h2>rent-a-fishman</h2>
-      <h3>Wordpress & Image Editing</h3> <br>
-    </a>
-    <a href="https://www.bautalent.de" target="_blank">
-      <img src="./images/Bautalent-Preview2.png">
-      <h2>Koinzer Altbausanierung</h2>
-      <h3>Webdesign & Google SEO</h3>
-    </a>
-    <!-- <a href="http://finanzdienstleistung.sh" target="_blank" >
-      <img src="./images/finanzdienstleistungLogo.png"/>
-      <h2>Jan-Ole Stahl Finanzdienstleistung</h2>
-      <h3>Webdesign</h3>
-    </a> -->
+<div>
+  <img src="./assets/project-koinzer-1516x896.png">
+  <h2>Koinzer Altbausanierung</h2>
+</div>
+<div>
+  <img src="./assets/project-raf-1516x896.png">
+  <h2>Rent-a-fishman</h2>
+</div>
+<div>
+  <img src="./assets/project-dg-1516x896.png">
+  <h2>Doing'good</h2>
+</div>
+<div>
+  <img src="./assets/project-nn-1516x896.png">
+  <h2>Nomen Nominandum</h2>
+</div>
+<div>
+  <img src="./assets/project-alumni-1516x896.png">
+  <h2>Alumni LEG e.V.</h2>
+</div>
   </div>
-  <hr></div>
-  <!-- Contact -->
-  <h1 class="sub-heading" id="contact" style="text-align: center;">You got an Idea? Let's make it big!</h1>
-  <div class="contact-container">
-    <div style="width: 100%; display: flex; justify-content: center;align-items: center;">
-      <!-- Contact Methods -->
-      <div class="socials">
-        <a href="https://www.instagram.com/tybemedia/" target="_blank">
-          <img src="./images/instagram-icon.webp" />
-          <span>Instagram</span></a>
-        <a href="https://wa.me/+4915226157169" target="_blank">
-          <img src="./images/whatsapp-icon.png" />
-          <span>Whatsapp</span></a>
-        <a href="tel:+49 1522 6157169"> <img src="./images/phone.png" /><span> Phone</span></a>
-        <a href="mailto:info@tybe-media.com"><img src="./images/mail.png"><span>Mail</span></img></a>
-      </div>
-    </div>
-    <img src="https://images.unsplash.com/photo-1601653487130-b062f940e64a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" style="max-width: 30vw";/>
+  <!-- Contact  -->
+<h1 style="text-align: center;">Let's make your Idea big</h1>
+
+  <div class="contact">
+<a href="tel:+4915206181374">
+  <div class="contact-option">
+    <img src="./assets/phone-call(1).png">
+    <span>Phone</span>
+    <span>+1520 6181374</span>
   </div>
+</a>
+<hr class="contact-seperator">
+<a href="mailto:info@tybe-media.com">
+  <div class="contact-option">
+    <img src="./assets/envelope.png">
+    <span>Mail</span>
+    <span>info@tybe-media.com</span>
+  </div>
+</a>
+  </div>
+  <!-- Footer -->
   <footer>
     <div>
       <span>©2023 Tybe Media by Timo Beyer</span>
