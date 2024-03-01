@@ -16,8 +16,13 @@ html, body {
 
 h1 {
   font-size: 42pt;
-  text-decoration: underline;
   font-family: 'Oswald', sans-serif;
+  padding: 0 5rem;
+  font-weight: normal;
+}
+
+h2 {
+  text-align: center;
 }
 
 a {
@@ -25,24 +30,27 @@ a {
   color: inherit;
 }
 
+.nav-buttons {
+  padding-right: 5rem;
+}
+
 .nav {
   animation: slideInFromTop 1s 1;
   display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   position: fixed;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
   z-index: 5;
-  padding: 0.5em;
-  height: 100px;
+  height: calc(100px + 2em);
   font-size: 20pt;
   text-transform: uppercase;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #142027 41%, black 100%);
 }
 
-.nav div a {
-  margin: 1em;
+.nav div a:not(:first-of-type) {
+  margin-left: 2em;
   color: #c8c8c8;
 }
 
@@ -60,9 +68,13 @@ a {
   color: white;
 }
 
-.welome-wrapper img {
+.welcome-wrapper img {
   width: 100%;
   max-height: 100vh;
+}
+
+.welcome-wrapper #welcome-mobile {
+  display: none;
 }
 
 .contact {
@@ -99,23 +111,27 @@ a {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 0 5rem;
 }
 
-.projects div {
+.projects a {
   flex: 1 0 45%;
-  margin: 0.5em;
   position: relative;
 }
 
-.projects div img {
+.projects a img {
   object-fit: cover;
   width: 100%;
 }
 
-.projects div h1 {
+.projects a h1 {
   position: absolute;
   bottom: 0;
   left: 1em;
+}
+
+.projects a:nth-child(2n) {
+  margin-left: 1em;
 }
 
 footer {
@@ -131,6 +147,18 @@ footer span {
 }
 
 @media only screen and (max-width: 979px) {
+  .projects {
+    padding: 0 0.5em;
+  }
+  .projects a {
+    margin: 0.5em !important;
+  }
+  #welcome-desktop {
+    display: none;
+  }
+  #welcome-mobile {
+    display: block !important;
+  }
   .nav-buttons {
     display: none;
   }
@@ -138,14 +166,17 @@ footer span {
     justify-content: center;
     padding: 0;
   }
+  footer span {
+    padding: 0;
+  }
   h1 {
     font-size: 32pt;
     padding: 0 1em;
   }
-  .projects div {
+  .projects a {
     flex: 1 0 calc(100% - 4em);
   }
-  .projects div h2 {
+  .projects a h2 {
     text-align: center;
   }
   .contact {
@@ -157,6 +188,10 @@ footer span {
   .contact-seperator {
     display: block;
   }
+}
+
+.wip {
+  opacity: 0.7;
 }
 
 @keyframes opacityFade {
