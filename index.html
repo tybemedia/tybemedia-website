@@ -14,53 +14,250 @@
 
 <body>
   <!-- Nav -->
-  <div class="nav page-width" id="topnav">
+  <!-- <div class="nav page-width" id="topnav">
     <a href="index.html" id="logo"><img src="./assets/logo.png" alt="Tybe Media" style="z-index: 3;padding-top: 1em;" /></a>
+  </div> -->
+<style>
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: relative;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+} 
+
+.counter {
+    animation: countup 2s forwards;
+    opacity: 0;
+}
+
+@keyframes countup {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+</style>
+<script>
+
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+
+</script>
+<div style="position: relative;height: 100%;">
+ <!-- The video -->
+ <video autoplay muted loop id="myVideo">
+  <source src="./assets/mixkit-panorama-of-a-big-city-at-night-from-the-heights-49848.mp4" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <div class="page-width"> 
+    <span style="font-size:22px;font-family: 'Lato', cursive;">TybeMedia ist dein Ansprechpartner für IT-Lösungen, Automatisierung und Skalierung</span>
+    <div class="content-inner" >
+      <span class="counter" id="counter">8.104.000.000</span>
+      <span> Menschen - 1 Idee <br></span>
+    </div>
   </div>
+  <div class="page-width">
+    <h2 style="max-width: 800px;text-align: right;">Ein 360° Ansprechpartner für deinen Erfolg </h2>
+  </div>
+</div> 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const counterElement = document.getElementById('counter');
+    const endCount = 8104672981; // Ending count
+    const duration = 2000; // Duration of animation in milliseconds
+    const interval = 10; // Interval for each step in milliseconds
+
+    let currentCount = 1104672981;
+    const increment = endCount / (duration / interval);
+
+    const counterInterval = setInterval(() => {
+        currentCount += increment;
+        if (currentCount >= endCount) {
+            clearInterval(counterInterval);
+            currentCount = endCount;
+        }
+        counterElement.textContent = new Intl.NumberFormat().format(Math.ceil(currentCount));
+    }, interval);
+});
+</script>
+</div>
+  
+  </div>
+  <!-- Short Banner -->
+  <div class="short-showcase">
+    <h2>▫️ Webdesign</h2>
+    <h2>▫️ Shopify & Wordpress▫️</h2>
+    <h2>▫️ SEO</h2>
+    <h2>▫️ Künstliche Intelligenz</h2>
+    <h2>▫️ Branding & Design</h2>
+    <h2>▫️ Server & Datenbanken▫️</h2>
+
+  </div>
+  <!-- Company Preview -->
+  <div style="
+  display: flex;padding-top: 200px " class="page-width" id="company-preview">
+    <div>
+      <span style="font-size:22px;max-width: 900px;">Effizient - Kompetent - Zuverlässig</span>
+      <h1 style="font-size:52px;padding: 0;padding-bottom: 0.5em;margin: 0;max-width: 900px;line-height: 1em;">Individuelle Lösungen für Ihr Projekt und Unternehmen</h1>
+      <p style="font-size:22px;max-width: 900px;margin-top: 0;">In einer Welt, in der Technologie unaufhörlich voranschreitet, ist es unser Anspruch, dass Ihr Projekt nicht nur mithält, sondern ganz oben anschlägt. <br><br>Bei TybeMedia entwickeln wir maßgeschneiderte IT-Lösungen für jeden Anwendungsfall.
+         Unsere Expertise fokussiert sich auf die Entwicklung von responsive Web- oder Mobilanwendungen, Serversystemen und Datenbankanwendungen.</p>
+    </div>
+    <div class="image-seperator"> 
+      <div class="logo-preview" style="margin-right: 4em;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShhzXQICHou6AZE8d16_rc0zHFUVsZVJ39WaBFPuuLY5W18GbRLeWfxrzqeWAyno5rQ64&usqp=CAU">
+        <img src="https://nomennominandum.com/cdn/shop/files/pexels-photo-2379005_535x537.jpg?v=1616143193">
+       </div>
+       <div class="logo-preview" style="margin-right: 4em;">
+        <img src="http://alumnileg.de/wp-content/uploads/2023/10/alumni-leg-logo-1.png#111">
+        <img src="https://lirp.cdn-website.com/0f1341ea/dms3rep/multi/opt/Logo-blau-rgb-133w.png">
+       </div>
+      </div>
+    </div>
+     <!-- Eine Hand -->
+  <div style="
+  display: flex;padding-top: 200px;width: 100%; " class="page-width"  id="eine-hand">
+   <div class="image-seperator"> 
+   <div class="logo-preview" style="margin-right: 4em;">
+      <img src="./assets/responsive.png">
+      <img src="./assets/query.png">
+    </div>
+    <div class="logo-preview" style="margin-right: 4em;">
+      <img src="./assets/ai.png">
+      <img src="./assets/seo.png">
+    </div>
+   </div>
+
+<div>
+      <span style="font-size:22px;max-width: 900px;">Das Beste aus Erfahrung und Netzwerk</span>
+      <h1 style="font-size:52px;padding: 0;padding-bottom: 0.5em;margin: 0;max-width: 900px;line-height: 1em;">Alles aus einer Hand</h1>
+      <p style="font-size:22px;max-width: 900px;margin-top: 0;">Für jede Diensleistung einen anderen Anbieter? Ewige Kommunikationswege und Missverständnisse? <br><br>
+      Als Rundumansprechpartner ist es unser Anspruch jedes Projekt rundum zu unterstützen von der Webanwendung über Serversystem und Datenbank bis SEO-Optimierung und Nutzung von KI schonen wir auf diese Art nicht nur Ihr Budget, sondern auch Ihre Zeit und Nerven.  </p>
+    </div>
+    </div>
+
 
   <!-- Portfolio -->
-  <h1 style="text-align: center;margin-top: 4em">Welcome to your future Solution, take a look at our past projects...</h1>
-  <div class="projects">
-<a href="cheribundi.de" target="blank">
-    <div>
-  <img src="./assets/project-cb-1516x896.png">
-  <h2>Cheribundi</h2>
-</div></a>
-<a href="bautalent.de" target="blank">
-<div>
-  <img src="./assets/project-koinzer-1516x896.png">
-  <h2>Koinzer Altbausanierung</h2>
-</div>
-</a>
-<a href="rent-a-fishman.de" target="blank">
-<div>
-  <img src="./assets/project-raf-1516x896.png">
-  <h2>Rent-a-fishman</h2>
-</div>
-</a>
-<a href="https://www.doin-good.com/" target="blank">
-<div>
-  <img src="./assets/project-dg-1516x896.png">
-  <h2>Doing'good</h2>
-</div>
-</a>
-<a href="https://nomennominandum.com/" target="blank">
-<div>
-  <img src="./assets/project-nn-1516x896.png" class="wip">
-  <h2>Nomen Nominandum (Work in Progress)</h2>
-</div>
-</a>
-<a href="http://alumnileg.de/" target="blank">
-<div>
-  <img src="./assets/project-alumni-1516x896.png" class="wip">
-  <h2>Alumni LEG e.V. (Work in Progress)</h2>
-</div>
-</a>
-
+  <!-- Cheribundi -->
+  <div class="portfolio-container page-width" style="padding-top: 200px;">
+    <h1>Cheribundi Europe</h1>
+    <h2>Recover faster!</h2><br>
+    <div class="portfolio-description">
+      <p>Cheribundi ist ein ganzheitlicher Recovery-Drink, der zu 100% natürlich ist. Wohltuend in der Wirkung und lecker im Geschmack hat Cheribundi die pure Sauerkirsche als Basis – und sonst nichts.</p>
+      <p>✔️Webdesign<br> ✔️Grafikdesign <br> ✔️Shopify-Store <br>✔️ IT-Support</p>
+    </div>
+    <div class="portfolio-gallery">
+      <div class="big-gallery">
+        <img src="./assets/project-cb-1516x896.png" class="big-gallery-image">
+        <img src="https://cheribundi.de/cdn/shop/files/eu-collage.webp?v=1701776322">
+      </div>
+      <div class="small-gallery">
+        <img src="https://cheribundi.de/cdn/shop/files/CB_Game.jpg?v=1676132934&width=750">
+        <img src="https://cheribundi.de/cdn/shop/files/Cheribundi_2023_Website_ProductBenefits_HeaderImage_1.webp?v=1704034486">
+        <img src="https://cheribundi.de/cdn/shop/files/Cheribundi_2023_Website_ProductBenefits_NoOffHours_Desktop.webp?v=1699268735">
+        <img src="https://cheribundi.de/cdn/shop/products/PureConcentrateBack_jpg.webp?v=1711445213&width=600">
+      </div>
+    </div>
   </div>
-  <hr>
+
+    <!-- Nomen Nomandum -->
+    <div class="portfolio-container page-width" >
+      <h1>Nomen Nominandum</h1>
+      <h2>Ikonisches und zeitloses Design</h2><br>
+      <div class="portfolio-description">
+        <p>Traditionelles Schuhhandwerk und komplexes Fachwissen vereint am Puls der Zeit, lassen unverwechselbare Meisterstücke entstehen.</p>
+        <p>✔️Webdesign<br> ✔️Grafikdesign <br> ✔️Shopify-Store</p>
+      </div>
+      <div class="portfolio-gallery">
+        <div class="big-gallery">
+          <img src="https://ullud45cs2fuouxo-51289161901.shopifypreview.com/cdn/shop/files/01_2000x1334_Shop_1.jpg?v=1709844156&width=3840" class="big-gallery-image">
+          <img src="https://ullud45cs2fuouxo-51289161901.shopifypreview.com/cdn/shop/files/03_2000x1334_Shop_10.jpg?v=1709844289&width=3840">
+        </div>
+        <div class="small-gallery">
+          <img src="https://ullud45cs2fuouxo-51289161901.shopifypreview.com/cdn/shop/files/1000x667_grosses_Bild_14.jpg?v=1709832701&width=1946">
+          <img src="https://ullud45cs2fuouxo-51289161901.shopifypreview.com/cdn/shop/files/1000x667_grosses_Bild_8_1.webp?v=1712154194&width=1946">
+          <img src="https://ullud45cs2fuouxo-51289161901.shopifypreview.com/cdn/shop/files/1000x667_grosses_Bild_2.jpg?v=1709831662&width=1946">
+          <img src="https://ullud45cs2fuouxo-51289161901.shopifypreview.com/cdn/shop/files/1000x667_grosses_Bild_11.jpg?v=1709843879&width=1946">
+        </div>
+      </div>
+    </div>
+
+     <!-- Doing'good -->
+     <div class="portfolio-container page-width" >
+      <h1>Doin'good</h1>
+      <h2>Fighting poverty through education. Engage. Enable. Empower.</h2><br>
+      <div class="portfolio-description">
+        <p>
+          Mehr Bildung, weniger Armut.
+          doin’ good hilft, als Non-Profit-Organisation bedürftigen Menschen auf der ganzen Welt mit Bildung Armut zu bekämpfen. Wir gehen auf unsere Zielgruppen ein, befähigen sie zur Selbsthilfe und geben ihnen so die Möglichkeit ihr Leben selbstbestimmt zu gestalten.
+          </p>
+        <p>✔️Webdesign<br> ✔️Automatisierung für Formulare </p>
+      </div>
+      <div class="portfolio-gallery">
+        <div class="big-gallery">
+          <img src="https://lirp.cdn-website.com/0f1341ea/dms3rep/multi/opt/Lernwerkstatt+Libanon-03e816c8-1920w.jpg" class="big-gallery-image">
+          <img src="https://lirp.cdn-website.com/0f1341ea/dms3rep/multi/opt/P6250369-640w.jpg">
+        </div>
+        <div class="small-gallery">
+          <img src="https://lirp.cdn-website.com/0f1341ea/dms3rep/multi/opt/RoboterBilder9+%283%29-1920w.jpeg">
+          <img src="https://lirp.cdn-website.com/0f1341ea/dms3rep/multi/opt/PHOTO-2022-05-19-14-34-06-640w.jpg">
+          <img src="https://lirp.cdn-website.com/0f1341ea/dms3rep/multi/opt/dg-makerspace-electricity1-1920w.jpg">
+          <img src="https://lirp.cdn-website.com/0f1341ea/dms3rep/multi/opt/P6200106-640w.jpg">
+        </div>
+      </div>
+    </div>
+
+  
+  <hr style="margin-top: 150px">
   <!-- Contact  -->
-<h1 style="text-align: center;">Questions? or time for action?</h1>
+<h1 style="text-align: center;">Bereit aus deiner Vision mehr zu machen?</h1>
 
   <div class="contact">
 <a href="tel:+4915206181374">
@@ -70,18 +267,26 @@
   </div>
 </a>
 <hr class="contact-seperator">
+<a href="https://wa.me/message/ELRZMHI57Q2AB1">
+  <div class="contact-option">
+    <img src="./assets/social.png">
+    <span>+1520 6181374</span>
+  </div>
+</a>
 <a href="mailto:info@tybe-media.com">
   <div class="contact-option">
     <img src="./assets/envelope.png">
     <span>info@tybe-media.com</span>
   </div>
 </a>
+
   </div>
   <!-- Footer -->
   <footer>
-      <span>©2024 Tybe Media by Timo Beyer</span>
+      <span>©2024 Tybe Media inh. Timo Beyer</span>
       <span><a href="./impress.html" target="_blank">Impress</a></span></div>
   </footer>
+
 </body>
 
 </html>
